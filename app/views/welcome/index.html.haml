@@ -1,4 +1,6 @@
 #app
   %h2 {{ message }}
-  %h3 {{ smallerMessage }}
 
+  .messages{ "v-for" => 'comment in comments'}
+    %h4{ v: { 'on:click' => 'logIndex($index)' } }
+      {{ comment }}
