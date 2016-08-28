@@ -8,8 +8,8 @@ new Vue({
       "nice"
     ]
   },
-  mehods: {
-    logIt(i) {
+  methods: {
+    logIndex(i) {
       console.log(i);
     }
   }
