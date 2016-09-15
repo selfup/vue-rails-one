@@ -1,26 +1,11 @@
 new Vue({
   el: '#app',
-  data: {
-    message: 'Hello Vue.js!',
-    comments: [
-      "wow",
-      "ok",
-      "nice"
-    ]
-  },
-  methods: {
-    logindex(i) {
-      console.log(i);
-    }
+  components: {
+    AppParent
   },
   template: `
     <div>
-      <h2>{{  message }}</h2>
-      <app-child
-        :comments='comments'
-        :logindex='logindex'
-      >
-      </app-child>
+      <app-parent></app-parent>
     </div>
   `
 })
