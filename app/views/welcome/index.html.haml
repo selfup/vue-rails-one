@@ -1,6 +1,1 @@
 #app
-  %h2 {{ message }}
-
-  .messages{ "v-for" => 'comment in comments'}
-    %h4{ v: { 'on:click' => 'logIndex($index)' } }
-      {{ comment }}
